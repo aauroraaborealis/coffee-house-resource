@@ -1,0 +1,12 @@
+:root {
+  --color-text-dark: #3f3d3b;
+  --color-text-light: #e3d7cd;
+  --color-text-accent: #b28f7b;
+
+  --color-bg-body: #e1d4c9;
+  --color-bg-container: #6b6359;
+  --color-bg-backdrop: #605d5a;
+
+  --color-border-light: #c5b8ae;
+  --color-border-dark: #6b6359;
+}

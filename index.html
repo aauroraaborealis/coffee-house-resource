@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/assets/logos/logo.svg" />
+    <title> Resource | Coffee house</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo">
+          <img
+            src="./src/assets/logos/logo.svg"
+            alt="Coffee House"
+            class="header__logo-pic"
+          />
+        </a>
+      </div>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#favorite-coffee" class="header__link">Favorite coffee</a>
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link">About</a>
+          </li>
+          <li class="header__item">
+            <a href="#app" class="header__link">Mobile app</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button
+          class="header__burger"
+          aria-label="Open menu"
+          aria-controls="site-menu"
+          aria-expanded="false"
+        >
+          <img src="./src/assets/icons/burger.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <a href="menu.html" class="header__menu-link u-underline-dark">
+          Menu
+          <img
+            src="./src/assets/icons/coffee-cup-icon.svg"
+            alt=""
+            class="header__menu-icon"
+            aria-hidden="true"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="enjoy__block">
+        <video class="enjoy__video" autoplay muted loop playsinline>
+          <source
+            src="https://videos.pexels.com/video-files/2909914/2909914-uhd_2732_1440_24fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="enjoy__content">
+          <h1 class="enjoy__title title__light">
+            <span class="text__accent__cursive">Enjoy</span> premium coffee at
+            our charming cafe
+          </h1>
+          <p class="enjoy__subtitle">
+            With its inviting atmosphere and delicious coffee options, the
+            Coffee House Resource is a popular destination for coffee lovers and
+            those seeking a warm and inviting space to enjoy their favorite
+            beverage.
+          </p>
+          <a href="menu.html" class="enjoy__btn">Menu</a>
+        </div>
+      </section>
+      <section class="favorite__block">
+        <p class="favorite__title title__dark">
+          Choose your <span class="text__accent__cursive">favorite</span> coffee
+        </p>
+        <div class="slider__block">
+          <button class="slider__button" aria-label="Previous slide"></button>
+          <div class="slider__content">
+            <img
+              class="slider__pic"
+              src="./src/assets/images/coffee-slider/frappuccino.png"
+              alt="Coffee House"
+            />
+            <p class="slider__title">S’mores Frappuccino</p>
+            <p class="text__small-dark">
+              This new drink takes an espresso and mixes it with brown sugar and
+              cinnamon before being topped with oat milk.
+            </p>
+            <p class="slider__price">$5.50</p>
+            <div class="slider__controls_cont">
+              <button class="slider__control"></button>
+              <button class="slider__control"></button>
+              <button class="slider__control"></button>
+            </div>
+          </div>
+          <button class="slider__button"></button>
+        </div>
+      </section>
+
+      <section class="collage__block">
+        <p class="collage__title title__dark">
+          Resource is
+          <span class="text__accent__cursive">the perfect and cozy place</span>
+          where you can enjoy a variety of hot beverages, relax, catch up with
+          friends, or get some work done.
+        </p>
+        <div class="collage">
+          <div class="collage__column">
+            <div class="collage__item collage__item--a">
+              <img
+                src="./src/assets/images/collage/about-1.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="collage__item collage__item--b">
+              <img
+                src="./src/assets/images/collage/about-2.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="collage__column">
+            <div class="collage__item collage__item--c">
+              <img
+                src="./src/assets/images/collage/about-3.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="collage__item collage__item--d">
+              <img
+                src="./src/assets/images/collage/about-4.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app__block">
+        <div class="apps__text">
+          <p class="collage__title apps__title title__dark">
+            <span class="text__accent__cursive">Download</span>
+            our apps to start ordering
+          </p>
+          <p class="text__small-dark apps__desc">
+            Download the Resource app today and experience the comfort of
+            ordering your favorite coffee from wherever you are
+          </p>
+          <div class="app__buttons-cont">
+            <button class="app__button">
+              <div class="app__icon app__icon--apple"></div>
+              <div class="app__text app__text--apple">
+                <p class="app__text-small">Available on the</p>
+                <p class="app__text-med">App Store</p>
+              </div>
+            </button>
+            <button class="app__button">
+              <div class="app__icon app__icon--google"></div>
+              <div class="app__text app__text--google">
+                <p class="app__text-small">Available on</p>
+                <p class="app__text-med">Google Play</p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <img src="./src/assets/images/mobile-screens.png" alt="" />
+      </section>
+    </main>
+    <footer class="footer__cont">
+      <div class="footer__text_cont">
+        <p class="footer__text title__light">
+          Sip, Savor, Smile.
+          <span class="text__accent__cursive">It’s coffee time!</span>
+        </p>
+        <div class="footer__socials_cont">
+          <button class="footer__socials socials--twitter"></button>
+          <button class="footer__socials socials--instagram"></button>
+          <button class="footer__socials socials--facebook"></button>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__contact_title">Contact us</p>
+        <div class="footer__contact-cont">
+          <div class="footer__contact-info">
+            <div class="footer__contact-icon contact--location"></div>
+            <p class="footer__contact-text">8558 Green Rd., LA</p>
+          </div>
+
+          <div class="footer__contact-info">
+            <div class="footer__contact-icon contact--phone"></div>
+            <p class="footer__contact-text">+1 (603) 555-0123</p>
+          </div>
+            <div class="footer__contact-info">
+              <div class="footer__contact-icon contact--time"></div>
+              <p class="footer__contact-text">Mon-Sat: 9:00 AM – 23:00 PM</p>
+            </div>
+          </div>
+                  </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

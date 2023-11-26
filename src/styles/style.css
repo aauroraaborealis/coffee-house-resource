@@ -1,0 +1,213 @@
+@import url("./tokens.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg-body);
+  padding: 0 40px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-bottom: 14px;
+}
+
+.header__container a,
+.header__container a:link,
+.header__container a:visited {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__menu-link {
+  display: inline-flex;
+  gap: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text-dark);
+}
+
+.header__menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header__nav,
+.header__actions {
+  margin-bottom: 10px;
+}
+
+.footer__cont {
+  background-color: var(--color-bg-container);
+  display: flex;
+  padding: 100px 100px;
+  border-radius: 40px;
+  gap: 55px;
+}
+
+.footer__text {
+  font-size: 60px;
+  max-width: 40vw;
+  margin-bottom: 39px;
+}
+
+.footer__socials {
+  inline-size: 60px;
+  block-size: 60px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--color-border-light);
+  border-radius: 100px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer__socials::before {
+  content: "";
+  inline-size: 24px;
+  block-size: 24px;
+  background-color: var(--color-text-light);
+  mask: var(--icon) no-repeat center;
+  mask-size: contain;
+}
+
+.footer__socials.socials--twitter {
+  --icon: url("../assets/icons/twitter.svg");
+}
+.footer__socials.socials--instagram {
+  --icon: url("../assets/icons/instagram.svg");
+}
+.footer__socials.socials--facebook {
+  --icon: url("../assets/icons/facebook.svg");
+}
+
+.footer__socials:hover::before {
+  background-color: var(--color-text-accent);
+}
+.footer__socials:focus-visible {
+  outline: 2px solid var(--color-text-light);
+  outline-offset: 2px;
+}
+
+.footer__socials {
+  margin-right: 7px;
+}
+
+.footer__contact {
+  color: var(--color-text-light);
+}
+
+.footer__contact_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  padding-top: 32px;
+  padding-bottom: 37px;
+}
+
+.footer__contact-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 7px;
+  padding-top: 3px;
+}
+
+.footer__contact-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.contact--time {
+  background-image: url("../assets/icons/clock.svg");
+}
+
+.contact--location {
+  background-image: url("../assets/icons/pin.svg");
+}
+
+.contact--phone {
+  background-image: url("../assets/icons/phone.svg");
+}
+
+.text__small-dark {
+  color: var(--color-text-dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.title__light {
+  font-weight: 600;
+  line-height: 105%;
+  color: var(--color-text-light);
+}
+
+.title__dark {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 125%;
+  color: var(--color-text-dark);
+}
