@@ -283,6 +283,25 @@ body {
   color: var(--color-text-accent);
 }
 
+@media (max-width: 1000px) {
+  .footer__cont {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 890px) {
+  .footer__cont {
+    padding: 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__cont {
+    gap: 24px;
+  }
+}
+
 @media (max-width: 769px) {
   body {
     padding: 0 16px;
