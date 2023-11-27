@@ -1,0 +1,115 @@
+.menu__title {
+  text-align: center;
+}
+
+.menu__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.menu__tabs__btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border-light);
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 7px 16px 7px 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu__tabs-icon {
+  background-color: var(--color-border-light);
+  border-radius: 99px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.menu__tabs-icon img {
+  width: 17px;
+  height: 17px;
+}
+
+.is-active-menu {
+  color: var(--color-text-light);
+  background-color: var(--color-bg-container);
+}
+
+.is-active-menu .menu__tabs-icon {
+  background-color: var(--color-text-light);
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+  justify-content: space-between;
+  margin-bottom: 104px;
+}
+
+.menu__card {
+  max-width: 310px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.card__media {
+  display: block;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 40px;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.card__media img:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.menu__card__body {
+  padding: 10px;
+  padding-left: 20px;
+  color: var(--color-text-dark);
+}
+
+.menu__card__title {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.menu__card__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 14px;
+  min-height: 72px;
+}
+
+.menu__card__price {
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 8px;
+}

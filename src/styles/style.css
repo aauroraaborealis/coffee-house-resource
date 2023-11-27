@@ -262,3 +262,8 @@ body {
   display: flex;
   padding: 0;
 }
+
+.text__accent__cursive {
+  font-style: italic;
+  color: var(--color-text-accent);
+}

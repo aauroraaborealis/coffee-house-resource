@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/logos/logo.svg" />
+    <title>Resource | Coffee house</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/menu.css" />
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__logo">
+        <a href="/coffee-house/index.html" class="header__logo">
+          <img
+            src="../assets/logos/logo.svg"
+            alt="Coffee House"
+            class="header__logo-pic"
+          />
+        </a>
+      </div>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#favorite-coffee" class="header__link underline"
+              >Favorite coffee</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link underline">About</a>
+          </li>
+          <li class="header__item">
+            <a href="#apps" class="header__link underline">Mobile app</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link underline">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button
+          class="header__burger"
+          aria-label="Open menu"
+          aria-controls="site-menu"
+          aria-expanded="false"
+        >
+          <img src="../assets/icons/burger.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <a href="menu.html" class="header__menu-link underline">
+          Menu
+          <img
+            src="../assets/icons/coffee-cup-icon.svg"
+            alt=""
+            class="header__menu-icon"
+            aria-hidden="true"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main class="menu container">
+      <header class="menu__head">
+        <h1 class="menu__title title__dark">
+          Behind each of our cups<br />
+          hides an <span class="text__accent__cursive">amazing surprise</span>
+        </h1>
+
+        <nav class="menu__tabs" role="tablist" aria-label="Drinks">
+          <button
+            class="menu__tabs__btn is-active-menu"
+            data-tab="coffee"
+            aria-selected="true"
+          >
+            <span class="menu__tabs-icon">
+              <img
+                src="../assets/icons/coffee-icon.png"
+                alt=""
+              />
+            </span>
+            Coffee
+          </button>
+
+          <button class="menu__tabs__btn" data-tab="tea" aria-selected="false">
+            <span class="menu__tabs-icon">
+              <img src="../assets/icons/teapot-icon.png" alt="" />
+            </span>
+            Tea
+          </button>
+          <button
+            class="menu__tabs__btn"
+            data-tab="dessert"
+            aria-selected="false"
+          >
+            <span class="menu__tabs-icon">
+              <img src="../assets/icons/cake-icon.png" alt="" />
+            </span>
+            Dessert
+          </button>
+        </nav>
+      </header>
+
+      <ul class="menu__list" id="menu-list" aria-live="polite"></ul>
+
+      <script src="../scripts/menu.js" defer></script>
+    </main>
+
+    <footer class="footer__cont" id="contacts">
+      <div class="footer__text_cont">
+        <p class="footer__text title__light">
+          Sip, Savor, Smile.
+          <span class="text__accent__cursive footer__text__accent"
+            >It’s coffee time!</span
+          >
+        </p>
+        <div class="footer__socials_cont">
+          <button class="footer__socials socials--twitter"></button>
+          <button class="footer__socials socials--instagram"></button>
+          <button class="footer__socials socials--facebook"></button>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__contact_title">Contact us</p>
+        <div class="footer__contact-cont">
+          <div class="footer__contact-info underline underline--light">
+            <div class="footer__contact-icon contact--location"></div>
+            <p class="footer__contact-text">8558 Green Rd., LA</p>
+          </div>
+
+          <div class="footer__contact-info underline underline--light">
+            <div class="footer__contact-icon contact--phone"></div>
+            <p class="footer__contact-text">+1 (603) 555-0123</p>
+          </div>
+          <div class="footer__contact-info underline underline--light">
+            <div class="footer__contact-icon contact--time"></div>
+            <p class="footer__contact-text">Mon-Sat: 9:00 AM – 23:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
