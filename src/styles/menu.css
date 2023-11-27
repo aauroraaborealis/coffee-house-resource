@@ -126,8 +126,8 @@
   position: fixed;
   inset: 0;
   z-index: 10;
-  display: flex; /* центрирование */
-  justify-content: center; /* по горизонтали */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -139,7 +139,7 @@
 
 .modal__dialog {
   position: relative;
-  margin: auto;
+  margin: 10px;
   max-width: 800px;
   height: fit-content;
   background: var(--color-bg-body);
@@ -268,8 +268,39 @@ hr {
   margin-top: 20px;
 }
 
-@media (max-width: 760px) {
-  .modal__cont {
-    grid-template-columns: 1fr;
+@media (max-width: 1105px) {
+  .menu__list {
+    justify-content: space-around;
+  }
+
+  .menu__title {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 751px) {
+  .menu__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal__media {
+    display: none;
+  }
+}
+
+@media (max-width: 385px) {
+  .menu__title {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .menu__tabs {
+    gap: 10px;
+  }
+
+  .menu__list {
+    margin-bottom: 40px;
   }
 }

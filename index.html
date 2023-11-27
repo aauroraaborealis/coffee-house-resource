@@ -20,7 +20,7 @@
         </a>
       </div>
 
-      <nav class="header__nav" aria-label="Main navigation">
+      <nav id="site-menu" class="header__nav" aria-label="Main navigation">
         <ul class="header__list">
           <li class="header__item">
             <a href="#favorite-coffee" class="header__link underline"
@@ -40,15 +40,6 @@
       </nav>
 
       <div class="header__actions">
-        <button
-          class="header__burger"
-          aria-label="Open menu"
-          aria-controls="site-menu"
-          aria-expanded="false"
-        >
-          <img src="./src/assets/icons/burger.svg" alt="" aria-hidden="true" />
-        </button>
-
         <a href="./src/html/menu.html" class="header__menu-link underline">
           Menu
           <img
@@ -59,6 +50,13 @@
           />
         </a>
       </div>
+
+      <button
+        class="header__burger"
+        aria-label="Open menu"
+        aria-controls="site-menu"
+        aria-expanded="false"
+      ></button>
     </header>
 
     <main>
@@ -194,7 +192,11 @@
             </button>
           </div>
         </div>
-        <img src="./src/assets/images/mobile-screens.png" alt="" />
+        <img
+          class="app__img"
+          src="./src/assets/images/mobile-screens.png"
+          alt=""
+        />
       </section>
     </main>
     <footer class="footer__cont" id="contacts">
@@ -230,6 +232,7 @@
         </div>
       </div>
     </footer>
+    <script src="./src/scripts/burger.js"></script>
     <script src="./src/scripts/slider.js"></script>
   </body>
 </html>
