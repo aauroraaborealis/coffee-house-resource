@@ -75,10 +75,7 @@
             aria-selected="true"
           >
             <span class="menu__tabs-icon">
-              <img
-                src="../assets/icons/coffee-icon.png"
-                alt=""
-              />
+              <img src="../assets/icons/coffee-icon.png" alt="" />
             </span>
             Coffee
           </button>
@@ -106,6 +103,52 @@
 
       <script src="../scripts/menu.js" defer></script>
     </main>
+
+    <div
+      id="item-modal"
+      class="modal"
+      hidden
+      aria-hidden="true"
+      aria-modal="true"
+    >
+      <div class="modal__backdrop" data-close="1"></div>
+
+      <div class="modal__dialog" role="document" tabindex="-1">
+        <div class="modal__cont">
+          <picture class="modal__media">
+            <img id="modal-img" alt="" />
+          </picture>
+
+          <div class="modal__body">
+            <h3 id="modal-title" class="modal__title"></h3>
+            <p id="modal-desc" class="modal__desc"></p>
+
+            <div class="modal__group">
+              <div class="modal__label">Size</div>
+              <div id="modal-sizes" class="chips"></div>
+            </div>
+
+            <div class="modal__group">
+              <div class="modal__label">Additives</div>
+              <div id="modal-adds" class="chips"></div>
+            </div>
+
+            <div class="modal__total">
+              <span>Total:</span>
+              <span id="modal-total">$0.00</span>
+            </div>
+            <hr />
+            <p class="modal__note">
+              <span aria-hidden="true">ⓘ</span>
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </p>
+            <button class="modal__cta" data-close="1">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer__cont" id="contacts">
       <div class="footer__text_cont">
